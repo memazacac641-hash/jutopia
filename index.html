@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="顾馨心 Julia Gu，广州美术学院艺术设计学学生的个人作品集。文化叙事、视觉与空间体验。">
+  <title>顾馨心 Julia Gu — Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23e6ff73'/%3E%3Ctext x='5' y='24' font-family='Arial' font-size='23' font-weight='bold'%3EG%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="refinement.css">
+  <script defer src="content.js"></script><script defer src="app.js"></script>
+  <script defer src="assets/hero.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">跳到主要内容</a>
+  <header class="header">
+    <a class="brand" href="#home" aria-label="Julia Gu 首页">JG<span>JUTOPIA</span></a>
+    <nav aria-label="主要导航"><a href="#about" data-i18n="navAbout">关于我</a><a href="#work" data-i18n="navWork">作品</a><a href="#experience" data-i18n="navExperience">经历</a><a href="#contact" data-i18n="navContact">联系我</a></nav>
+    <div class="languages" aria-label="Language"><button type="button" data-lang="zh" aria-pressed="true">中</button><span>/</span><button type="button" data-lang="en" aria-pressed="false">EN</button></div>
+  </header>
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-top"><span data-i18n="student">广州美术学院 · 艺术设计学学生</span><span>PERSONAL PORTFOLIO / 2026</span></div>
+      <h1 id="hero-title">JULIA <span class="last-name">GU<span class="asterisk" aria-hidden="true">✳</span></span></h1>
+      <div class="hero-bottom"><div class="identity">顾馨心<span>GU XINXIN</span></div><p data-i18n="heroText">以当代视觉与空间体验，重新讲述文化故事。</p><a class="pill" href="#work" data-i18n="explore">浏览作品</a></div>
+    </section>
+    <section class="about section" id="about" aria-labelledby="about-title">
+      <div class="section-heading"><h2 id="about-title" data-i18n="aboutTitle">关于我 / About me</h2><span>(01)</span></div>
+      <div class="about-layout">
+        <figure class="about-film">
+          <div class="about-player">
+            <video id="about-video" controls playsinline preload="none" tabindex="0" aria-label="个人短片"></video>
+            <button id="play-about-video" class="video-play" type="button" hidden><span aria-hidden="true">▶</span><span data-i18n="playFilm">播放短片</span></button>
+          </div>
+          <figcaption><span data-i18n="filmTitle">个人短片</span><span id="film-duration">00:53</span></figcaption>
+          <p id="video-status" class="video-status" role="status"></p>
+        </figure>
+        <div class="about-copy"><p class="bio" id="bio"></p><div class="skills"><h3 data-i18n="skillsTitle">设计工具</h3><div><span>2D VISUAL</span><p>Adobe Photoshop<br>Adobe Illustrator</p></div><div><span>3D MODELLING</span><p>Creo · Blender<br>Rhino · KeyShot</p></div></div></div>
+      </div>
+    </section>
+    <section id="work" class="work section" aria-labelledby="work-title">
+      <div class="section-heading"><h2 id="work-title" data-i18n="workTitle">作品 / Works</h2><span>(02—05)</span></div>
+      <p class="section-note" data-i18n="workNote">从产品、展览到 AI，探索文化叙事的不同表达。</p>
+      <div class="project-grid" id="projects"></div>
+    </section>
+    <section class="experience section" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading"><h2 id="experience-title" data-i18n="experienceTitle">实习经历 / Experience</h2></div>
+      <p class="section-note" data-i18n="experienceNote">从品牌视觉到文化传播，在实践中拓展设计。</p>
+      <div id="experience-tabs" class="experience-tabs" role="tablist" aria-labelledby="experience-title"></div>
+      <div id="experience-panel" class="experience-panel" role="tabpanel" tabindex="0"></div>
+    </section>
+    <section class="contact section" id="contact" aria-labelledby="contact-title">
+      <div class="section-heading"><h2 id="contact-title" data-i18n="contactTitle">联系方式 / Contact</h2><span>(06)</span></div>
+      <div class="contact-layout"><div><p class="contact-invite" data-i18n="invite">从一句<br>你好开始。</p><a class="email" id="email"></a><p class="contact-note" data-i18n="contactNote">欢迎就作品、实习机会或设计合作联系我。</p></div><div class="wechat"><span>WECHAT</span><p id="wechat-id"></p><button class="copy-button" type="button" id="copy" data-i18n="copy">复制微信号</button><div class="qr" id="qr"></div><p class="copy-status" role="status" aria-live="polite" id="copy-status"></p></div></div>
+    </section>
+  </main>
+  <footer><span>© 2026 JULIA GU</span><span>GU XINXIN / 顾馨心</span><a href="#home" data-i18n="top">回到顶部</a></footer>
+  <noscript><p class="noscript">请启用 JavaScript 查看作品资料和完整简介。联系邮箱：3030001734@qq.com，微信：filmouttomi。</p></noscript>
+</body>
+</html>
